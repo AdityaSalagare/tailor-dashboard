@@ -108,7 +108,7 @@ function finishOrder(id) {
         order.isFinished = true;
 
         // Construct the message
-        const message = `Hi ${order.customerName}, Your order "${order.orderDetails}" is finished! Total: ${order.price} Rs. --Tailor`;
+        const message = `Hi ${order.customerName}, Your order "${order.orderDetails}" is finished! Total: ${order.price} Rs. --Bharati (गार्गी लेडीज टेलर्स)`;
 
         alert(`Order for ${order.customerName} marked as finished!`);
         sendWhatsAppMessage(order.contact, message); // Use customer's contact dynamically

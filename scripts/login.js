@@ -3,7 +3,7 @@ document.getElementById('loginForm').addEventListener('submit', function (e) {
     const username = document.getElementById('username').value;
     const password = document.getElementById('password').value;
 
-    if (username === 'tailor' && password === '12345') {
+    if (username === 'Bharati' && password === '12012025') {
         alert('Login successful!');
         window.location.href = 'dashboard.html';
     } else {
