@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailor Dashboard</title>
+    <link rel="stylesheet" href="styles/dashboard.css">
+</head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+
+<body>
+    <header>
+        <h1>Welcome, Tailor!</h1>
+    </header>
+    <main>
+        <section id="orderForm">
+            <h2>Create Order</h2>
+            <form id="createOrderForm">
+                <input type="text" id="customerName" placeholder="Customer Name" required />
+                <input type="text" id="contact" placeholder="Customer Contact (e.g., +1234567890)" required />
+                <input type="text" id="orderDetails" placeholder="Order Details" required />
+                <input type="number" id="price" placeholder="Price (e.g., 1000)" required />
+                <input type="date" id="date" placeholder="Order Date" required />
+                <input type="time" id="time" placeholder="Order Time" required />
+                <input type="date" id="pickupDate" placeholder="Pickup Date" required />
+                <button type="submit">Create Order</button>
+            </form>
+        </section>
+        <section id="orderList">
+            <h2>Orders</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Customer</th>
+                        <th>Contact</th>
+                        <th>Details</th>
+                        <th>Price</th>
+                        <th>Order Date</th>
+                        <th>Order Time</th>
+                        <th>Pickup Date</th>
+                        <th>Status</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="orders"></tbody>
+            </table>
+        </section>
+        <section id="actions">
+            <button id="downloadExcel">Download Excel</button>
+        </section>
+        
+    </main>
+    <script src="scripts/dashboard.js"></script>
+    <script src="scripts/whatsapp-bot.js"></script>
+</body>
+</html>
